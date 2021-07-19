@@ -97,8 +97,8 @@ const server: CommandInt = {
 
       // Add the server voice channels count to an embed field.
       serverEmbed.addField(
-        "Voice channel count",
-        guild.channels.cache.filter((channel) => channel.type === "voice").size,
+        "Voice Channels",
+        guildChannels.filter((chan) => chan.type === "voice").size(),
         true
       );
 
